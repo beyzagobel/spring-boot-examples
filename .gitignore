@@ -19,6 +19,21 @@ target/
 *.iml
 *.ipr
 
+.gitignore
+mvnw.cmd
+mvnw
+
+/spring-mongo-repository/mvnw
+/spring-mongo-repository/mvnw.cmd
+/spring-mongo-repository/.mvn
+/spring-mongo-repository/spring-mongo-repository.iml
+
+
+/spring-mongo-template/mvnw
+/spring-mongo-template/mvnw.cmd
+/spring-mongo-template/.mvn
+/spring-mongo-template/spring-mongo-repository.iml
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
