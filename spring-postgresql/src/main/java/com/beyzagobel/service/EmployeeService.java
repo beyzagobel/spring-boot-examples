@@ -31,7 +31,7 @@ public class EmployeeService {
         return ResponseEntity.ok(employee);
     }
 
-    public ResponseEntity<Employee> updateEmployee(Long employeeId, Employee employeeDetails) throws ResourceNotFoundException {
+    public ResponseEntity<Employee> updateEmployee(Long employeeId, Employee employeeDetails) {
         Employee employee = employeeRepository.findById(employeeId)
                 .orElseThrow(() -> new ResolutionException("Employee Not Found For This Id ::" + employeeId));
 

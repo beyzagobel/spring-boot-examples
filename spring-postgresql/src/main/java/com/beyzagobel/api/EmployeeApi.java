@@ -5,7 +5,6 @@ import com.beyzagobel.entity.Employee;
 import com.beyzagobel.exception.ResourceNotFoundException;
 import com.beyzagobel.service.EmployeeService;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,11 +12,14 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequiredArgsConstructor
 @RequestMapping("/api")
 public class EmployeeApi {
 
     private final EmployeeService employeeService;
+
+    public EmployeeApi(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
 
     @GetMapping("/employees")
     public ResponseEntity<List<Employee>> getAllEmployees(){

@@ -10,7 +10,6 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpHeaders;
-
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest(classes = SpringPostgresqlApplication.class, webEnvironment = WebEnvironment.RANDOM_PORT)
