@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee579221-93fa-4e04-bdc2-ec50661e53a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/dto/EmployeeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31c4c3a6-c95c-456a-990b-848c4f2c2e2d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31c4c3a6-c95c-456a-990b-848c4f2c2e2d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31c4c3a6-c95c-456a-990b-848c4f2c2e2d/storage_v2/_src_/database/springdb.S79klw/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31c4c3a6-c95c-456a-990b-848c4f2c2e2d/storage_v2/_src_/database/springdb.S79klw/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31c4c3a6-c95c-456a-990b-848c4f2c2e2d/storage_v2/_src_/database/springdb.S79klw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31c4c3a6-c95c-456a-990b-848c4f2c2e2d/storage_v2/_src_/database/springdb.S79klw/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31c4c3a6-c95c-456a-990b-848c4f2c2e2d/storage_v2/_src_/database/springdb.S79klw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31c4c3a6-c95c-456a-990b-848c4f2c2e2d/storage_v2/_src_/database/springdb.S79klw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_3_0_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-postgresql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/SpringPostgresqlApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/SpringPostgresqlApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/api/EmployeeApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/api/EmployeeApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/entity/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/impl/EmployeeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/impl/EmployeeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/src/main/java/com/beyzagobel/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-postgresql/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-postgresql/target/classes/com/beyzagobel/SpringPostgresqlApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/target/classes/com/beyzagobel/SpringPostgresqlApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-postgresql/target/classes/com/beyzagobel/api/EmployeeApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/target/classes/com/beyzagobel/api/EmployeeApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-postgresql/target/classes/com/beyzagobel/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/target/classes/com/beyzagobel/entity/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-postgresql/target/classes/com/beyzagobel/impl/EmployeeImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/target/classes/com/beyzagobel/impl/EmployeeImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-postgresql/target/classes/com/beyzagobel/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-postgresql/target/classes/com/beyzagobel/service/EmployeeService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +87,23 @@
     <property name="settings.editor.selected.configurable" value="shared-indexes" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringPostgresqlApplication">
+  <component name="RunManager" selected="Application.SpringPostgresqlApplication">
     <configuration name="SpringMongoTemplateApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.beyzagobel.SpringMongoTemplateApplication" />
       <module name="SpringExamples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beyzagobel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringPostgresqlApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.beyzagobel.SpringPostgresqlApplication" />
+      <module name="spring-postgresql" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.beyzagobel.*" />
@@ -141,6 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringPostgresqlApplication" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.SpringMongoTemplateApplication" />
       </list>
@@ -161,7 +171,7 @@
       <workItem from="1669069934547" duration="113000" />
       <workItem from="1669154550568" duration="2335000" />
       <workItem from="1669175821027" duration="2464000" />
-      <workItem from="1669181245649" duration="5839000" />
+      <workItem from="1669181245649" duration="7679000" />
     </task>
     <servers />
   </component>
