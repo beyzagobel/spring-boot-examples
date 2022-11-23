@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="SpringExamples">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/spring-mongo-repository/src/main/java" />
+      <root url="file://$PROJECT_DIR$/spring-mongo-repository/src/test/java" />
+      <root url="file://$PROJECT_DIR$/spring-mongo-template/src/main/java" />
+      <root url="file://$PROJECT_DIR$/spring-mongo-template/src/test/java" />
+      <root url="file://$PROJECT_DIR$/spring-postgresql/src/main/java" />
+      <root url="file://$PROJECT_DIR$/spring-postgresql/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

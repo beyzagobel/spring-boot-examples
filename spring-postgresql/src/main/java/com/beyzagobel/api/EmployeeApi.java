@@ -4,7 +4,6 @@ package com.beyzagobel.api;
 import com.beyzagobel.entity.Employee;
 import com.beyzagobel.exception.ResourceNotFoundException;
 import com.beyzagobel.service.EmployeeService;
-import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,13 +31,13 @@ public class EmployeeApi {
     }
 
     @PostMapping("/employees/{id}")
-    public Employee createEmployee (@Valid @RequestBody Employee employee){
+    public Employee createEmployee (@RequestBody Employee employee){
         return employeeService.createEmployee(employee);
     }
 
     @PutMapping("/employees/{id}")
     public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Long employeeId,
-                                                   @Valid @RequestBody Employee employeeDetails)
+                                                    @RequestBody Employee employeeDetails)
     throws ResourceNotFoundException{
         return employeeService.updateEmployee(employeeId, employeeDetails);
 

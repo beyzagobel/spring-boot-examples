@@ -8,10 +8,11 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "employees")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "employees")
+
 public class Employee {
 
     @Id
@@ -34,6 +35,5 @@ public class Employee {
     @Column(name = "e_salary",nullable = false)
     private Integer salary;
 
-
-
+   
 }
