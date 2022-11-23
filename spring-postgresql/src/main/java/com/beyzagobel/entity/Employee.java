@@ -12,12 +12,11 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "employees")
-
-public class Employee {
+public class Employee  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "e_id", nullable = false)
+    @Column(name = "id", nullable = false)
     private Long id;
 
     @Column(name = "e_name", nullable = false)
@@ -35,5 +34,4 @@ public class Employee {
     @Column(name = "e_salary",nullable = false)
     private Integer salary;
 
-   
 }
