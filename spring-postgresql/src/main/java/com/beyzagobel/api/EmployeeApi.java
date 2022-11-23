@@ -1,13 +1,14 @@
 package com.beyzagobel.api;
 
 
+import com.beyzagobel.dto.EmployeeDTO;
 import com.beyzagobel.entity.Employee;
 import com.beyzagobel.exception.ResourceNotFoundException;
 import com.beyzagobel.impl.EmployeeImpl;
-import com.beyzagobel.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 import java.util.Map;
 
@@ -29,14 +30,13 @@ public class EmployeeApi {
     }
 
     @PostMapping("/employees")
-    public Employee createEmployee (@RequestBody Employee employee){
-        return employeeImpl.createEmployee(employee);
+    public Employee createEmployee (@RequestBody EmployeeDTO employeeDTO){
+        return employeeImpl.createEmployee(employeeDTO);
     }
 
     @PutMapping("/employees/{id}")
     public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Long employeeId,
-                                                    @RequestBody Employee employeeDetails)
-    throws ResourceNotFoundException{
+                                                    @RequestBody EmployeeDTO employeeDetails) {
         return employeeImpl.updateEmployee(employeeId, employeeDetails);
 
     }
@@ -46,6 +46,6 @@ public class EmployeeApi {
         return employeeImpl.deleteEmployee(employeeId);
     }
 
-    }
+}
 
 

@@ -1,12 +1,15 @@
 package com.beyzagobel.service;
 
+import com.beyzagobel.dto.EmployeeDTO;
 import com.beyzagobel.entity.Employee;
 import com.beyzagobel.exception.ResourceNotFoundException;
 import com.beyzagobel.impl.EmployeeImpl;
 import com.beyzagobel.repository.EmployeeRepository;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
 import java.lang.module.ResolutionException;
 import java.util.HashMap;
 import java.util.List;
@@ -18,8 +21,11 @@ public class EmployeeService implements EmployeeImpl {
 
     private final EmployeeRepository employeeRepository;
 
+    private final ModelMapper modelMapper;
+
     @Override
-    public Employee createEmployee(Employee employee) {
+    public Employee createEmployee(EmployeeDTO employeeDTO){
+        Employee employee = this.modelMapper.map(employeeDTO, Employee.class);
         return employeeRepository.save(employee);
     }
 
@@ -37,19 +43,23 @@ public class EmployeeService implements EmployeeImpl {
 
 
     @Override
-    public ResponseEntity<Employee> updateEmployee(Long employeeId, Employee employeeDetails) {
+    public ResponseEntity<Employee> updateEmployee(Long employeeId, EmployeeDTO req) {
         Employee employee = employeeRepository.findById(employeeId)
                 .orElseThrow(() -> new ResolutionException("Employee Not Found For This Id ::" + employeeId));
 
+        Employee employeeDetails = this.modelMapper.map(req, Employee.class);
+
         employee.setName(employeeDetails.getName());
-        employee.setAge(employeeDetails.getAge());
-        employee.setDepartment(employeeDetails.getDepartment());
+        employee.setSurname(employeeDetails.getSurname());
+        employee.setDateOfBirth(employeeDetails.getDateOfBirth());
         employee.setGender(employeeDetails.getGender());
+        employee.setDepartment(employeeDetails.getDepartment());
         employee.setSalary(employeeDetails.getSalary());
+        employee.setCreateAt(employeeDetails.getCreateAt());
 
-        final Employee updateEmployee = employeeRepository.save(employee);
+        return ResponseEntity.ok(employeeRepository.save(employee));
 
-        return ResponseEntity.ok(updateEmployee);
+
     }
 
     @Override
