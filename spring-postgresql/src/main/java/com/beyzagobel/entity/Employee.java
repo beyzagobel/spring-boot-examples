@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
@@ -46,6 +47,10 @@ public class Employee implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "create_at")
     private Date createAt;
+
+    @OneToMany
+    @JoinColumn(name = "id")
+    private List<Address> addressList;
 
 
 }
