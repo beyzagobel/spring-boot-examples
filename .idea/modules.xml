@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../SpringExamples.iml" filepath="$PROJECT_DIR$/../SpringExamples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-postgresql/spring-postgresql.iml" filepath="$PROJECT_DIR$/spring-postgresql/spring-postgresql.iml" />
     </modules>
   </component>
 </project>
