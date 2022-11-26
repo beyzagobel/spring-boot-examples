@@ -31,6 +31,9 @@
 http://localhost:8080/swagger-ui/index.html
 ```
 
+![image](https://user-images.githubusercontent.com/78444522/204109195-315a74bc-3096-40da-afc9-483f062014a6.png)
+
+
 ### Docker Setup
 
 1.  Docker Image Download
@@ -63,5 +66,6 @@ CREATE DATABASE springdb;
 ```
 \l
 ```
+![image](https://user-images.githubusercontent.com/78444522/204109226-8855949f-7114-4dac-9f4d-9f8558d58eb1.png)
 
 
