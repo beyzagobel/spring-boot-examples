@@ -50,7 +50,7 @@ public class Employee implements Serializable {
 
     @OneToMany
     @JoinColumn(name = "id")
-    private List<Address> addressList;
+    private List<Address> addressList;   // join
 
 
 }

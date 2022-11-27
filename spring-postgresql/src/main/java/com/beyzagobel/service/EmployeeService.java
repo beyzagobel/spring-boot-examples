@@ -4,10 +4,10 @@ import com.beyzagobel.dto.EmployeeDTO;
 import com.beyzagobel.entity.Employee;
 import com.beyzagobel.exception.ResourceNotFoundException;
 import com.beyzagobel.impl.EmployeeImpl;
-import com.beyzagobel.repository.AddressRepository;
 import com.beyzagobel.repository.EmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -22,16 +22,12 @@ public class EmployeeService implements EmployeeImpl {
 
     private final EmployeeRepository employeeRepository;
 
-    private final AddressRepository addressRepository;
-
     private final ModelMapper modelMapper;
 
     @Override
-    public Employee createEmployee(EmployeeDTO employeeDTO){
+    public ResponseEntity<Employee> createEmployee(EmployeeDTO employeeDTO){
         Employee employee = this.modelMapper.map(employeeDTO, Employee.class);
-        employee = employeeRepository.save(employee);
-
-        return employee;
+        return new ResponseEntity<>(employeeRepository.save(employee), HttpStatus.CREATED);  // 201
     }
 
     @Override

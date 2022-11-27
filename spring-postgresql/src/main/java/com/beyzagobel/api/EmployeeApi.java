@@ -30,7 +30,7 @@ public class EmployeeApi {
     }
 
     @PostMapping("/employees")
-    public Employee createEmployee (@RequestBody EmployeeDTO employeeDTO){
+    public ResponseEntity<Employee> createEmployee (@RequestBody EmployeeDTO employeeDTO){
         return employeeImpl.createEmployee(employeeDTO);
     }
 

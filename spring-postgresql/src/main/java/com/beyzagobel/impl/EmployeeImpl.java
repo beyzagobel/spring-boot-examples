@@ -12,7 +12,7 @@ import java.util.Map;
 
 public interface EmployeeImpl {
 
-    Employee createEmployee(EmployeeDTO employeeDTO);
+    ResponseEntity<Employee> createEmployee(EmployeeDTO employeeDTO);
 
     ResponseEntity<List<Employee>> getAllEmployees();
 

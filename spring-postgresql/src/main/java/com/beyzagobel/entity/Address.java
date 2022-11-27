@@ -27,9 +27,13 @@ public class Address implements Serializable {
     @Column(name = "isActive")
     private Boolean isActive;
 
-    @Enumerated
+    @Enumerated                          // enum type
     @Column(name = "type_of_address")
     private TypeOfAddress typeOfAddress;
+
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "id")
+    private Employee employee;
 
     enum TypeOfAddress{
         HOME_ADDRESS,
