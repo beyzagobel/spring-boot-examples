@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories
+@EnableJpaRepositories    // jpa repositories initial
 public class SpringPostgresqlApplication {
 
     public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class SpringPostgresqlApplication {
 
     // Swagger Bean
     @Bean
-    public OpenAPI customopenAPI(@Value("${application-description}") String description,
+    public OpenAPI customOpenAPI(@Value("${application-description}") String description,
                                  @Value("${application-version}") String version){
         return new OpenAPI()
                 .info(new Info()
@@ -36,5 +36,7 @@ public class SpringPostgresqlApplication {
                         .description(description)
                         .license(new License().name("Spring Example API Lisence")));
     }
+
+
 
 }

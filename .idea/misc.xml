@@ -10,9 +10,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-mongo-repository/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mongo-template/pom.xml" />
         <option value="$PROJECT_DIR$/spring-postgresql/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mongo-repository/pom.xml" />
       </list>
     </option>
   </component>
